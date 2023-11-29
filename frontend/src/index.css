@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&family=Work+Sans:ital@0;1&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: ghostwhite;
+  color: black;
+  font-family: "Roboto Slab", serif;
+}
+
+.image-inverted {
+  filter: invert(100%);
+}
