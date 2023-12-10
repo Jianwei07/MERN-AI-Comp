@@ -7,10 +7,10 @@ type Props = {
   textColor: string;
   onClick?: () => Promise<void>;
 };
-
-const NagivationLink = (props: Props) => {
+const NavigationLink = (props: Props) => {
   return (
     <Link
+      onClick={props.onClick}
       className="nav-link"
       to={props.to}
       style={{ background: props.bg, color: props.textColor }}
@@ -20,4 +20,4 @@ const NagivationLink = (props: Props) => {
   );
 };
 
-export default NagivationLink;
+export default NavigationLink;

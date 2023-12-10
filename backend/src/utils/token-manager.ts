@@ -1,8 +1,6 @@
-import { NextFunction, Request, Response } from "express";
+import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import { COOKIE_NAME } from "./constants.js";
-import { resolve } from "path";
-import { rejects } from "assert";
 
 export const createToken = (id: string, email: string, expiresIn: string) => {
   const payload = { id, email };
